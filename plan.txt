@@ -11,8 +11,8 @@
       - nodemon
 
 3. create Express server - create a server.js file //done
-   3.1.git setup and first commit
-   3.2 install laravel mix
+   3.1.git setup and first commit //done
+   3.2 install laravel mix //done
        - setup js and scss
    3.3 install tailwind css 
 4. create Home page using Html and css
