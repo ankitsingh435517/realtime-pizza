@@ -14,8 +14,12 @@
                     <h1><%= pizza.item.name %></h1>
                     <span><%= pizza.item.size %></span>
                 </div>
-                <span class="flex-1"><%= pizza.qty %> Pcs</span>
+                <div class="flex-1">
+                <span class=""><%= pizza.qty %> Pcs</span>
+                <!-- <button data-pizza="<%= JSON.stringify(pizza) %>" class="editCart-btn">&#x270E;</button> -->
+                </div>
                 <span class="font-bold text-lg">₹<%= pizza.item.price * pizza.qty %></span>
+                <!-- <button data-pizza="<%= JSON.stringify(pizza) %>" class="editCart-btn">&#10060;</button> -->
             </div>
             <% } %>
         </div>

@@ -297,7 +297,7 @@ nav li a:hover {
 }
 
 section.hero {
-  background: #F8F8F8;
+  background: #ffa200;
 }
 
 .btn-primary {
@@ -347,4 +347,13 @@ section.login a:hover {
 .noty_theme__mint {
   border-radius: 50px !important;
   padding-left: 8px !important;
+}
+
+.editCart-btn {
+  font-size: 20px !important;
+  color: white !important;
+  margin-left: 1rem;
+}
+.editCart-btn:hover {
+  color: red !important;
 }

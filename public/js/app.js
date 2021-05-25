@@ -1846,10 +1846,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var noty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! noty */ "./node_modules/noty/lib/noty.js");
 /* harmony import */ var noty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(noty__WEBPACK_IMPORTED_MODULE_1__);
-var addToCart = document.querySelectorAll('.add-to-cart');
+var addToCart = document.querySelectorAll('.add-to-cart'); // let removeToCart = document.querySelectorAll('.editCart-btn')
 
 
-var cartCounter = document.querySelector('#cartCounter');
+
+var cartCounter = document.querySelector('#cartCounter'); // function deleteCart(pizza) {
+//    axios.post('/delete-cart' , pizza).then(res =>{
+//         cartCounter.innerText = res.data.totalQty
+//         new Noty({
+//             type: 'success',
+//             timeout: 1000,
+//             progressBar: false,
+//             text: 'Item removed from cart'
+//          }).show();
+//     }).catch(err => {
+//         new Noty({
+//             type: 'error',
+//             timeout: 1000,
+//             progressBar: false,
+//             text: 'something went wrong'
+//         }).show();
+// })
+// }
+// removeToCart.forEach((btn) => {
+//    btn.addEventListener('click' , (e) =>{
+//        let pizza = JSON.parse(btn.dataset.pizza)
+//        deleteCart(pizza)     
+//    })    
+// })
 
 function updateCart(pizza) {
   axios__WEBPACK_IMPORTED_MODULE_0___default().post('/update-cart', pizza).then(function (res) {

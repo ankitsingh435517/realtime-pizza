@@ -25,8 +25,8 @@
 8. Add to cart functionality
    - fetch all pizzas from db and show on home page //done
    - create menu model and put dummy Data // done
-   - connect to mongo db
-   - use connect-mongo for session store
+   - connect to mongo db //done
+   - use connect-mongo for session store //done
       - dependencies 
         - mongoose, express-session, connect-mongo, dotenv
    - axios to send ajax request

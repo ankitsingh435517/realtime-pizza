@@ -1,5 +1,6 @@
 
 //logic for get , post
+// const Cart = require('../../../models/cart')
 
 function cartController(){
     return {
@@ -44,10 +45,33 @@ function cartController(){
 
 
 
-            return res.json({ totalQty: req.session.cart.totalQty })
+             return res.json({ totalQty: req.session.cart.totalQty })
         }
+        
+
+        //   delete(req,res){
+                
+        //         if(req.session.cart){
+        //             if(req.session.cart.items[req.body._id].qty == '1'){
+        //             req.session.cart = {
+        //                 items : {},
+        //                 totalQty: req.session.cart.totalQty - 1,
+        //                 totalPrice: req.session.cart.totalPrice - req.body.price
+        //             }
+        //         }else{
+        //             req.session.cart = {
+        //                 items : req.session.cart.items,
+        //                 totalQty: req.session.cart.totalQty - 1,
+        //                 totalPrice: req.session.cart.totalPrice - req.body.price
+        //             }
+        //         }
+                 
+        //         return res.json({ totalQty: req.session.cart.totalQty })
+        //     }     
+        // }
     }
 }
+
 
 
 module.exports = cartController
